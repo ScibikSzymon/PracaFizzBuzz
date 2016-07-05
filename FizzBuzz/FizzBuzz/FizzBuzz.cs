@@ -8,20 +8,34 @@ namespace FizzBuzz
 {
     public class FizzBuzz
     {
-        
-        public string DivideBy3(int a)
+        public string gameString { get; set; }
+        public int DivideBy3(int a)
         {
-            throw new NotImplementedException();
+            return a%3;
         }
 
-        public string DivideBy5(int a)
+        public int DivideBy5(int a)
         {
-            throw new NotImplementedException();
+            return a%5;
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < 100; i++)
+            {
+                if (DivideBy3(i) == 0)
+                {
+                    gameString += "Fizz";
+                }
+                else if (DivideBy5(i) == 0)
+                {
+                    gameString += "Buzz";
+                }
+                else
+                {
+                    gameString += i.ToString();
+                }
+            }
         }
     }
 }

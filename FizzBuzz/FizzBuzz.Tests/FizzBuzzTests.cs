@@ -11,19 +11,26 @@ namespace FizzBuzz.Tests
     public class FizzBuzzTests
     {
         [Test]
+        public void GameString()
+        {
+            var fb = new FizzBuzz();
+            fb.gameString = "value";
+            Assert.AreEqual(fb.gameString, "value");
+        }
+        [Test]
         public void Divide_ReturnFizz()
         {
             var fb = new FizzBuzz();
-            string returnString = fb.DivideBy3(3);
-            Assert.AreEqual("Fizz", returnString);
+            int sum = fb.DivideBy3(3);
+            Assert.AreEqual(0, sum);
         }
 
         [Test]
         public void Divide_ReturnBuzz()
         {
             var fb = new FizzBuzz();
-            string returnString = fb.DivideBy5(5);
-            Assert.AreEqual("Buzz",returnString);
+            int sum = fb.DivideBy5(5);
+            Assert.AreEqual(0,sum);
         }
     }
 }
