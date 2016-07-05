@@ -8,7 +8,7 @@ namespace FizzBuzz
 {
     public class FizzBuzz
     {
-        public string gameString { get; set; }
+        public string GameString { get; set; }
         public int DivideBy3(int a)
         {
             return a%3;
@@ -25,15 +25,15 @@ namespace FizzBuzz
             {
                 if (DivideBy3(i) == 0)
                 {
-                    gameString += "Fizz";
+                    GameString += "Fizz";
                 }
                 else if (DivideBy5(i) == 0)
                 {
-                    gameString += "Buzz";
+                    GameString += "Buzz";
                 }
                 else
                 {
-                    gameString += i.ToString();
+                    GameString += i.ToString();
                 }
             }
         }

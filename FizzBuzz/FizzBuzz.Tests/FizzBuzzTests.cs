@@ -14,8 +14,8 @@ namespace FizzBuzz.Tests
         public void GameString()
         {
             var fb = new FizzBuzz();
-            fb.gameString = "value";
-            Assert.AreEqual(fb.gameString, "value");
+            fb.GameString = "value";
+            Assert.AreEqual(fb.GameString, "value");
         }
         [Test]
         public void Divide_ReturnFizz()
