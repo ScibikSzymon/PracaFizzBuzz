@@ -8,5 +8,20 @@ namespace FizzBuzz
 {
     public class FizzBuzz
     {
+        
+        public string DivideBy3(int a)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string DivideBy5(int a)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Start()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
